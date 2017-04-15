@@ -28,10 +28,10 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     this.renderer = renderer;
                 }
                 AutoGrowDirective.prototype.onFocus = function () {
-                    this.renderer.setElementStyle(this.el, 'width', '300');
+                    this.renderer.setElementStyle(this.el.nativeElement, 'width', '300px');
                 };
                 AutoGrowDirective.prototype.onBlur = function () {
-                    this.renderer.setElementStyle(this.el, 'width', '120');
+                    this.renderer.setElementStyle(this.el.nativeElement, 'width', '120px');
                 };
                 AutoGrowDirective = __decorate([
                     core_1.Directive({
